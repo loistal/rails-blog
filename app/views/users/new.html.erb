@@ -1,0 +1,25 @@
+<h1 align="center">Sign up for my blog</h1>
+
+<%= form_for @user do |f| %>
+
+	<p>
+		<%= f.label :username %> <br/>		
+		<%= f.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true %>
+	</p>
+
+	<p>
+		<%= f.label :email %> <br/>		
+		<%= f.email_field :email, class: "form-control", placeholder: "Enter email" %>
+	</p>
+
+	<p>
+		<%= f.label :password %> <br/>		
+		<%= f.password_field :password, class: "form-control", placeholder: "Enter password" %>
+	</p>
+
+	<p>
+		<%= f.submit "Sign up", class: "btn btn-primary btn-lg" %>
+	</p>
+
+<% end %>
+
