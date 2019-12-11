@@ -1,4 +1,4 @@
-$navbar-default-bg: #08088A;
+$navbar-default-bg: #9CBE51;
 
 
 @import 'bootstrap/dist/css/bootstrap';
@@ -21,9 +21,10 @@ $navbar-default-bg: #08088A;
 }
 
 .jumbotron {
-	background-image: asset-url('background-image.jpg');
+	background-image: asset-url('hero-image.jpg');
 	background-size: cover;
 	height: 550px;
+	margin-top: 50px;
 }
 
 .footer {
@@ -31,4 +32,50 @@ $navbar-default-bg: #08088A;
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
 	color: #777;
+}
+
+#loisBlogNavigation {
+	background-color: #9CBE51;
+}
+
+.typewriter {
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
+}
+
+#typewriterTitle {
+	color: white;
+}
+
+#typewriterContainer {
+	margin-top: 50px;
 }
