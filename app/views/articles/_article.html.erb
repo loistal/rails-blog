@@ -1,9 +1,6 @@
-<h1>Listing all articles</h1>
+<h1 align="center">Portfolio</h1>
 
-<p>
-	<%= link_to "Create a new article", new_article_path %>
-</p>
-
+<!--
 <table>
 
 		<tr>
@@ -24,3 +21,21 @@
 		
 		<% end %>
 </table>
+-->
+
+<div id="portoflioRow" class="row">
+	<% obj.each do |article| %>
+		<div class="col-md-4 col-md-offset-2">
+			<div class="portfolio-item-container">
+					<img src="<%= article.img_url %>" class="portfolio-img" alt="portfolio image">
+					<div class="on-center-img">
+						<a href="<%= article.item_url %>" class="portfolio-item-link">
+							<div class="portfolio-item-title"><%= article.title %></div> 
+						</a>
+							<%= article.description %>	
+						
+					</div>
+			</div>
+		</div>
+	<% end %>
+</div>

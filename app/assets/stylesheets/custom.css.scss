@@ -3,6 +3,10 @@ $navbar-default-bg: #9CBE51;
 
 @import 'bootstrap/dist/css/bootstrap';
 
+body {
+    font-family: nunito,roboto,proxima-nova,proxima nova,sans-serif;
+}
+
 #logo {
 	font-size: 1.7em;
 	color: #fff;
@@ -83,4 +87,40 @@ $navbar-default-bg: #9CBE51;
 .listing {
     list-style: none;
     padding-left: 0;
+}
+
+.portfolio-img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+#portfolio-row {
+    margin-top: 50px;
+}
+
+.portfolio-item-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.on-center-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-item-link {
+    color: white;
+        text-decoration-color: white;
+}
+
+.portfolio-item-title {
+    font-size: 1.3em;
+}
+
+.portfolio-item-link :hover {
+    color: white;
+
 }
