@@ -50,7 +50,7 @@ body {
     display: inline-block;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	animation: typing 3s steps(30, end), blink .75s step-end infinite;
+ 	animation: typing 1.5s steps(10, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 50px;
     font-weight: 700;
@@ -102,6 +102,7 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    margin-top: 30px;
 }
 
 .on-center-img {
@@ -113,14 +114,18 @@ body {
 
 .portfolio-item-link {
     color: white;
-        text-decoration-color: white;
 }
 
 .portfolio-item-title {
     font-size: 1.3em;
 }
 
-.portfolio-item-link :hover {
+.portfolio-item-link:hover {
     color: white;
+    text-decoration-color: white;
 
+}
+
+#rubyItems {
+    margin-top: 60px;
 }
