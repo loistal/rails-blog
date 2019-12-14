@@ -1,0 +1,42 @@
+<h1 align="center">Create a new category</h1>
+
+<% if @category.errors.any? %>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h2 class="panel-title">
+						<%= pluralize(@category.errors.count, "error") %>
+						prohibited this category from being saved:
+					</h2>
+					<div class="panel-body">
+						<ul>
+							<% @category.errors.full_messages.each do |msg| %>
+								<li><%= msg %></li>
+							<% end %>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	
+
+<% end %>
+
+<%= form_for @category do |f| %>
+
+	<p>
+		<%= f.label :name %> <br/>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.submit %> 
+	</p>
+
+
+<% end %>
